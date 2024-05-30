@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="simple_calculator.html">Calculatrice Simple</a></li>
+            <li><a href="advance_calculator.html">Calculatrice Avancée</a></li>
+            <li><a href="unit_conversion.html">Conversion d'Unités</a></li>
+            <li><a href="Ingénierie.html">Ingénierie</a></li>
+        </ul>
+    </nav>
+    
+<div class="cont">
+
+    <div id="calculator" class="calculator">
+
+        <div id="operator_input_div" class="operator_input_div">
+            <label for="operator">L'operation : </label> <br>
+            <input type="text" id="operator_input" class="operator_input">
+        </div>
+
+        <div id="result_div" class="result_div">
+            <label for="">Le résultat : </label> <br>
+            <input type="text" id="result_input" class="result_input" readonly>
+        </div>
+
+        <div id="buttons_div" class="buttons_div">
+            <button class="btn" onclick="add('1')">1</button>
+            <button class="btn" onclick="add('2')">2</button>
+            <button class="btn" onclick="add('3')">3</button>
+            <button class="btn" onclick="add('4')">4</button>
+            <button class="btn" onclick="add('5')">5</button>
+            <button class="btn" onclick="add('6')">6</button>
+            <button class="btn" onclick="add('7')">7</button>
+            <button class="btn" onclick="add('8')">8</button>
+            <button class="btn" onclick="add('9')">9</button>
+            <button class="btn" onclick="add('0')">0</button>
+            <button class="btn" onclick="add('.')">.</button>
+            <button class="btn" onclick="add('+')">+</button>
+            <button class="btn" onclick="add('-')">-</button>
+            <button class="btn" onclick="add('*')">*</button>
+            <button class="btn" onclick="add('/')">/</button>
+            <button class="btn" onclick="add('^')">^</button>
+            <button class="btn" onclick="calculate()">=</button>
+            <button class="btn" onclick="clearR()">C</button>
+            <button class="btn" onclick="clearI()">ac</button>
+            <button class="btn" onclick="Ans()">Ans</button>
+            
+        </div>
+
+    </div>
+    
+</div>
+    <div style="display: flex; justify-content: center;">
+    <footer>
+        <p> Par Abdelaziz Marhoum </p>
+    </footer>     
+    </div>
+
+    <script src="scriptSIMPLE.js"></script>
+
+</body>
+</html>

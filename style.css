@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator {
+    width: 78%;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: aliceblue;
+    font-size: larger;
+}
+
+.operator_input_div , .result_div {
+    margin: 10px;
+}
+
+.buttons_div {
+    justify-content: space-around;
+}
+
+
+.operator_input , .result_input {
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(222, 225, 228);
+    font-size: larger;
+}
+
+.btn {
+    width: 60px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(152, 152, 255);
+    font-size: large;
+    transition: all 0.5s;
+}
+
+
+.btn:hover , .btnU:hover , .btnS:hover {
+    background-color: rgb(132, 132, 196);
+    transition: all 0.5s;
+    border: 2px solid rgb(66, 64, 64);
+}
+
+.btnU {
+    width: 110px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(152, 152, 255);
+    font-size: larger;
+    transition: all 0.5s;
+}
+
+.units_div_main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons_div1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.convert_radio {
+    margin: 10px;
+}
+
+.sections {
+    padding: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+h2 {
+    color: #007bff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 97%;
+    font-size: large;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.btnS {
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: rgb(152, 152, 255);
+    font-size: large;
+    transition: all 0.5s;
+}
+
+.ingéni_input {
+    width: 25%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(222, 225, 228);
+    font-size: 16px;
+}

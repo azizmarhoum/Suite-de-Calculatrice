@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+    <nav>
+        <ul>
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="simple_calculator.html">Calculatrice Simple</a></li>
+            <li><a href="advance_calculator.html">Calculatrice Avancée</a></li>
+            <li><a href="unit_conversion.html">Conversion d'Unités</a></li>
+            <li><a href="Ingénierie.html">Ingénierie</a></li>
+        </ul>
+    </nav>
+
+    <div class="cont">
+        <div id="calculator" class="calculator">
+
+            <div id="buttons_div" class="operator_input_div">
+                <div style="text-align: center;">
+                    <label>Choisissez l'unité que vous voulez : </label> <br> <br>
+                </div>
+                
+                <div class="buttons_div">
+                    <button class="btnU" onclick="Length()">Longueur</button>
+                    <button class="btnU" onclick="Mass()">Masse</button>
+                    <button class="btnU" onclick="Area()">Surface</button>
+                    <button class="btnU" onclick="Volume()">Volume</button>
+                    <button class="btnU" onclick="Time()">Temps</button>
+                    <button class="btnU" onclick="Speed()">Vitesse</button>
+                    <button class="btnU" onclick="Data()">Données</button>
+                </div>
+
+            <div class="units_div_main">
+
+                <div id="units_div" class="checked_div"></div>
+                <div id="units_btn" class="buttons_div1">
+                    
+                    <input type='number' id='convert_input' class='operator_input' placeholder="Valeur à convertir:"><br>
+                    <button class='btnU' onclick='convert()'>Convertir</button><br>
+                    
+                    <input type='text' id='convert_result' class='operator_input' readonly placeholder="Résultat de la conversion:">
+                </div>
+                <div id="units_div1" class="checked_div"></div>
+
+            </div>
+
+            </div>
+
+        </div> 
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <footer>
+            <p> Par Abdelaziz Marhoum </p>
+        </footer>     
+    </div>
+
+    <script src="scriptUNIT.js"></script>
+
+</body>
+</html>

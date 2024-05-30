@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="Accueil.html">Accueil</a></li>
+            <li><a href="simple_calculator.html">Calculatrice Simple</a></li>
+            <li><a href="advance_calculator.html">Calculatrice Avancée</a></li>
+            <li><a href="unit_conversion.html">Conversion d'Unités</a></li>
+            <li><a href="Ingénierie.html">Ingénierie</a></li>
+        </ul>
+    </nav>
+
+    <div class="cont">
+
+        <div id="calculator" class="calculator">
+
+            <div id="buttons_div" class="operator_input_div">
+                <div style="text-align: center;">
+                    <label>Choisissez la surface que vous voulez : <span style="color: red;" id="span1"></span></label> <br> <br>
+                </div>
+                
+                <div class="buttons_div">
+                    <button class="btnS" onclick="Carré()">Carré (2D)</button>
+                    <button class="btnS" onclick="Rectangle()">Rectangle (2D)</button>
+                    <button class="btnS" onclick="Cercle()">Cercle (2D)</button>
+                    <button class="btnS" onclick="Triangle()">Triangle (2D)</button>
+                    <button class="btnS" onclick="Cube()">Cube (3D)</button>
+                    <button class="btnS" onclick="P_rectanglaire()">P.rectanglaire (3D)</button>
+                    <button class="btnS" onclick="Sphere()">Sphere (3D)</button>
+                    <button class="btnS" onclick="Cylindre()">Cylindre (3D)</button>
+                </div>
+                <br>
+                <div class="units_div_main" id="Ingénierie"></div><br>
+
+                <div style="text-align: center;">
+                    <label>Choisissez le volume que vous voulez : <span style="color: red;" id="span2"></span></label> <br> <br>
+                </div>
+                <div class="buttons_div">
+                    <button class="btnS" onclick="CubeV()">Cube (3D)</button>
+                    <button class="btnS" onclick="P_rectanglaireV()">P.rectanglaire (3D)</button>
+                    <button class="btnS" onclick="SphereV()">Sphere (3D)</button>
+                    <button class="btnS" onclick="CylindreV()">Cylindre (3D)</button>
+                </div>
+                <br>
+                <div class="units_div_main" id="volume"></div><br>
+
+            </div>
+
+        </div> 
+
+    </div>
+    <div style="display: flex; justify-content: center;">
+        <footer>
+            <p> Par Abdelaziz Marhoum </p>
+        </footer>     
+        </div>
+
+    <script src="scriptINGENIERIE.js"></script>
+    
+</body>
+</html>
